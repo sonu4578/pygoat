@@ -1,0 +1,35 @@
+name: CI/CD Pipeline for PyGoat
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  # 1. Run security analysis using CodeQL
+  codeql:
+    name: CodeQL Security Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up CodeQL
+        uses: github/codeql-action/setup-codeql@v2
+        with:
+          languages: python
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/autobuild@v2
+        with:
+          languages: python
+
+      - name: Run CodeQL analysis
+        uses: github/codeql-action/analyze@v2
+        with:
+          category: "Security Analysis"
+          
+

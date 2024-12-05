@@ -822,3 +822,450 @@ WARNING:django.request:Not Found: /mitre/21f
 INFO:django.utils.autoreload:/home/toxin/Project/gsoc/pygoat/pygoat/settings.py changed, reloading.
 WARNING:django.request:Not Found: /mitre/21f
 WARNING:django.request:Not Found: /x
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /injection_sql_lab
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 866, in injection_sql_lab
+    sql_query = sql_query.replace("'", "")
+UnboundLocalError: local variable 'sql_query' referenced before assignment
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /injection_sql_lab
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 866, in injection_sql_lab
+    sql_query = sql_query.replace("'", "")
+UnboundLocalError: local variable 'sql_query' referenced before assignment
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /cryptographic_failure
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view introduction.views.crypto_failure didn't return an HttpResponse object. It returned None instead.
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.security.csrf:Forbidden (CSRF cookie not set.): /broken_access_lab_3
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /cryptographic_failure/lab3
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 1067, in crypto_failure_lab3
+    print("Entering " + crypto_failure_lab3)
+TypeError: can only concatenate str (not "function") to str
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /cryptographic_failure/lab3
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 1069, in crypto_failure_lab3
+    cookie = request.COOKIES["cookie"]
+KeyError: 'cookie'
+ERROR:django.request:Internal Server Error: /cryptographic_failure/lab3
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 1069, in crypto_failure_lab3
+    cookie = request.COOKIES["cookie"]
+KeyError: 'cookie'
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /robots
+WARNING:django.request:Not Found: //introduction/test
+WARNING:django.request:Not Found: /data_exp_lab/get
+WARNING:django.request:Not Found: /data_exp_lab2
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+WARNING:django.request:Not Found: /data_ex
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /data_exp_lab
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 398, in data_exp_lab
+    return  render(request,'Lab/DataExp/data_exp_lab_non_existing.html')
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Lab/DataExp/data_exp_lab_non_existing.html
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/settings.py changed, reloading.
+ERROR:django.request:Internal Server Error: /data_exp_lab
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 398, in data_exp_lab
+    return  render(request,'Lab/DataExp/data_exp_lab_non_existing.html')
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Lab/DataExp/data_exp_lab_non_existing.html
+ERROR:django.request:Internal Server Error: /sec_mis
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 528, in sec_mis
+    return render(request,"Lab/sec_mis/sec_mis.html")
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 116, in render
+    url = self.url(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 113, in url
+    return self.handle_simple(path)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 173, in url
+    return self._url(self.stored_name, name, force)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 152, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 472, in stored_name
+    raise ValueError(
+ValueError: Missing staticfiles manifest entry for 'css/dark-theme.css'
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /sec_mis
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 528, in sec_mis
+    return render(request,"Lab/sec_mis/sec_mis.html")
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 116, in render
+    url = self.url(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 113, in url
+    return self.handle_simple(path)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 173, in url
+    return self._url(self.stored_name, name, force)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 152, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 472, in stored_name
+    raise ValueError(
+ValueError: Missing staticfiles manifest entry for 'css/dark-theme.css'
+ERROR:django.request:Internal Server Error: /sec_mis
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 528, in sec_mis
+    return render(request,"Lab/sec_mis/sec_mis.html")
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 116, in render
+    url = self.url(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 113, in url
+    return self.handle_simple(path)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 173, in url
+    return self._url(self.stored_name, name, force)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 152, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 472, in stored_name
+    raise ValueError(
+ValueError: Missing staticfiles manifest entry for 'css/dark-theme.css'
+ERROR:django.request:Internal Server Error: /sec_mis
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 528, in sec_mis
+    return render(request,"Lab/sec_mis/sec_mis.html")
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 116, in render
+    url = self.url(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 113, in url
+    return self.handle_simple(path)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 173, in url
+    return self._url(self.stored_name, name, force)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 152, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 472, in stored_name
+    raise ValueError(
+ValueError: Missing staticfiles manifest entry for 'css/dark-theme.css'
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+WARNING:django.request:Not Found: /error
+WARNING:django.request:Not Found: /robots
+WARNING:django.request:Not Found: /Lab/DataExp/robots.txt
+ERROR:django.request:Internal Server Error: /sec_mis
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 529, in sec_mis
+    return render(request,"Lab/sec_mis/sec_mis.html")
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 116, in render
+    url = self.url(context)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 113, in url
+    return self.handle_simple(path)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/templatetags/static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 173, in url
+    return self._url(self.stored_name, name, force)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 152, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py", line 472, in stored_name
+    raise ValueError(
+ValueError: Missing staticfiles manifest entry for 'css/dark-theme.css'
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /sec_mis_lab3
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 1118, in sec_misconfig_lab3
+    'user': admin,
+NameError: name 'admin' is not defined
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /sec_mis_lab3
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 1118, in sec_misconfig_lab3
+    'user': admin,
+NameError: name 'admin' is not defined
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /sec_mis_lab3
+Traceback (most recent call last):
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py", line 1128, in sec_misconfig_lab3
+    payload = jwt.decode(token, SECRET_COOKIE_KEY, algorithms=['HS256'])
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/jwt/api_jwt.py", line 129, in decode
+    decoded = self.decode_complete(jwt, key, algorithms, options, **kwargs)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/jwt/api_jwt.py", line 100, in decode_complete
+    decoded = api_jws.decode_complete(
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/jwt/api_jws.py", line 182, in decode_complete
+    self._verify_signature(signing_input, header, signature, key, algorithms)
+  File "/Users/student_s/Documents/Codebase_Opensource/pygoat/pygoat/myenv/lib/python3.10/site-packages/jwt/api_jws.py", line 269, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+WARNING:django.request:Not Found: /cryptographic_failure/lab23445
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/student_s/Documents/Codebase_Opensource/pygoat/introduction/views.py changed, reloading.

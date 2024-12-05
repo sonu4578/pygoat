@@ -10,6 +10,7 @@ import re
 import string
 import subprocess
 import uuid
+import urllib.parse
 from dataclasses import dataclass
 from hashlib import md5
 from io import BytesIO
@@ -144,7 +145,10 @@ def sql(request):
         return redirect('login')
 
 def sql_lab(request):
+    print("\nin sql_lab\n")
     if request.user.is_authenticated:
+
+        print("\nin request.user.is_authenticated\n")
 
         name=request.POST.get('name')
 
@@ -154,7 +158,11 @@ def sql_lab(request):
 
             if login.objects.filter(user=name):
 
-                sql_query = "SELECT * FROM introduction_login WHERE user='"+name+"'AND password='"+password+"'"
+                password = password.replace("'", "")
+
+                print("\npassword=",password)
+
+                sql_query = "SELECT * FROM introduction_login WHERE user=test'"+name+"'AND password='"+password+"'"
                 print(sql_query)
                 try:
                     print("\nin try\n")
@@ -386,8 +394,10 @@ def data_exp(request):
 def data_exp_lab(request):
     if request.user.is_authenticated:
         return  render(request,'Lab/DataExp/data_exp_lab.html')
+        #return  render(request,'Lab/DataExp/data_exp_lab_non_existing.html')
     else:
         return redirect('login')
+
 def robots(request):
     if request.user.is_authenticated:
         response = render(request,'Lab/DataExp/robots.txt')
@@ -745,8 +755,7 @@ def a1_broken_access_lab_1(request):
     
     name = request.POST.get('name')
     password = request.POST.get('pass')
-    print(password)
-    print(name)
+
     if name:
         if request.COOKIES.get('admin') == "1":
             return render(
@@ -772,6 +781,7 @@ def a1_broken_access_lab_1(request):
     else:
         return render(request,'Lab_2021/A1_BrokenAccessControl/broken_access_lab_1.html',{"no_creds":True})
 
+
 @csrf_exempt
 def a1_broken_access_lab_2(request):
     if request.user.is_authenticated:
@@ -783,9 +793,7 @@ def a1_broken_access_lab_2(request):
     password = request.POST.get('pass')
     user_agent = request.META['HTTP_USER_AGENT']
 
-    # print(name)
-    # print(password)
-    print(user_agent)
+    #print(user_agent)
     if name :  
         if (user_agent == "pygoat_admin"):
             return render(
@@ -812,6 +820,8 @@ def a1_broken_access_lab_2(request):
     else:
         return render(request,'Lab_2021/A1_BrokenAccessControl/broken_access_lab_2.html',{"no_creds":True})
 
+
+
 def a1_broken_access_lab_3(request):
     if not request.user.is_authenticated:
         return redirect('login')
@@ -833,6 +843,18 @@ def a1_broken_access_lab3_secret(request):
     # no checking applied here
     return render(request, 'Lab_2021/A1_BrokenAccessControl/secret.html')
 
+#V: Added fixed version of code
+def a1_broken_access_lab3_secret_(request):
+    # Check if the user has been authenticated
+    if not request.user.is_authenticated:
+        return redirect('login')
+
+    # Check if the user has the permissions to be able to view the secret
+    if not request.user.is_superuser and not request.user.has_perm('app_label.can_view_secret'):
+        raise PermissionDenied
+
+    # Show the secret only if user is authenticated and user has the required permissions
+    return render(request, 'Lab_2021/A1_BrokenAccessControl/secret.html')
 
 ###################################################### 2021 A3: Injection
 
@@ -850,10 +872,14 @@ def injection_sql_lab(request):
 
         name=request.POST.get('name')
         password=request.POST.get('pass')
-        print(name)
-        print(password)
+
+        #print(name)
+        #print(password)
 
         if name:
+
+            password = password.replace("'", "")
+
             sql_query = "SELECT * FROM introduction_sql_lab_table WHERE id='"+name+"'AND password='"+password+"'"
 
             sql_instance = sql_lab_table(id="admin", password="65079b006e85a7e798abecb99e47c154")
@@ -1003,12 +1029,17 @@ def ssti_view_blog(request,blog_id):
 #-------------------------Cryptographic Failure -----------------------------------#
 
 def crypto_failure(request):
+
+    print("Entering crypto_failure")
+
     if request.user.is_authenticated:
         return render(request,"Lab_2021/A2_Crypto_failur/crypto_failure.html",{"success":False,"failure":False})
     else:
         redirect('login')
 
+
 def crypto_failure_lab(request):
+
     if request.user.is_authenticated:
         if request.method=="GET":
             return render(request,"Lab_2021/A2_Crypto_failur/crypto_failure_lab.html")
@@ -1017,9 +1048,52 @@ def crypto_failure_lab(request):
             password = request.POST["password"]
             try:
                 password = md5(password.encode()).hexdigest()
-                user = CF_user.objects.get(username=username,password=password)
+
+                #user = CF_user.objects.get(username=username,password=password)
+
+                user = CF_user.objects.filter(username=username,password=password).first()
+
                 return render(request,"Lab_2021/A2_Crypto_failur/crypto_failure_lab.html",{"user":user, "success":True,"failure":False})
-            except:
+
+            except Exception as e:
+                print(e)
+                return render(request,"Lab_2021/A2_Crypto_failur/crypto_failure_lab.html",{"success":False, "failure":True})
+    else :
+        return redirect('login')
+
+
+def crypto_failure_lab_NEW(request):
+
+    print("Entering crypto_failure_lab")
+
+    if request.user.is_authenticated:
+        if request.method=="GET":
+            return render(request,"Lab_2021/A2_Crypto_failur/crypto_failure_lab.html")
+        elif request.method=="POST":
+            username = request.POST["username"]
+            password = request.POST["password"]
+            try:
+                print("password before encoding:", password)
+
+                password = md5(password.encode()).hexdigest()
+
+                print("password after encoding:", password)
+
+                print("CF_user.objects NEW=", CF_user.objects)
+
+                users = CF_user.objects.all()
+
+                for user in users:
+                    print(f"Username: {user.username}, Hashed Password: {user.password}")  # This will print the hashed password, not the plain text password
+
+                #user = CF_user.objects.get(username=username,password=password)
+
+                user = CF_user.objects.filter(username=username,password=password).first()
+
+                return render(request,"Lab_2021/A2_Crypto_failur/crypto_failure_lab.html",{"user":user, "success":True,"failure":False})
+
+            except Exception as e:
+                print(e)
                 return render(request,"Lab_2021/A2_Crypto_failur/crypto_failure_lab.html",{"success":False, "failure":True})
     else :
         return redirect('login')
@@ -1038,13 +1112,16 @@ def crypto_failure_lab2(request):
             except:
                 return render(request,"Lab_2021/A2_Crypto_failur/crypto_failure_lab2.html",{"success":False, "failure":True})
 
+
 # based on CWE-319
 def crypto_failure_lab3(request):
+
     if request.user.is_authenticated:
         if request.method == "GET":
             try :
+
                 cookie = request.COOKIES["cookie"]
-                print(cookie)
+
                 expire = cookie.split('|')[1]
                 expire = datetime.datetime.fromisoformat(expire)
                 now = datetime.datetime.now()
@@ -1081,11 +1158,69 @@ from pygoat.settings import SECRET_COOKIE_KEY
 
 
 def sec_misconfig_lab3(request):
+
     if not request.user.is_authenticated:
         return redirect('login')
     try:
+
         cookie = request.COOKIES["auth_cookie"]
         payload = jwt.decode(cookie, SECRET_COOKIE_KEY, algorithms=['HS256'])
+
+        if payload['user'] == 'admin':
+            return render(request,"Lab/sec_mis/sec_mis_lab3.html", {"admin":True} )
+        else:
+            return render(request,"Lab/sec_mis/sec_mis_lab3.html", {"admin":False} )
+    except:
+        payload = {
+            'user':'not_admin',
+            'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
+            'iat': datetime.datetime.utcnow(),
+        }
+
+        cookie = jwt.encode(payload, SECRET_COOKIE_KEY, algorithm='HS256')
+        response = render(request,"Lab/sec_mis/sec_mis_lab3.html", {"admin":False} )
+        response.set_cookie(key = "auth_cookie", value = cookie)
+        return response
+
+
+def sec_misconfig_lab3_NEW(request):
+
+    ALGORITHM = 'HS256'
+
+    #SECRET_KEY = SECRET_COOKIE_KEY
+    SECRET_KEY = "ABCDEFG"
+
+    payload = {
+        'user': 'admin',
+        'is_admin': True,
+        'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=1)  # Token valid for 1 hour
+    }
+
+    # Create the token
+    token = jwt.encode(payload, SECRET_KEY, algorithm=ALGORITHM)
+    print("JWT Token to be used for admin user:")
+    print(token)
+
+    payload = jwt.decode(token, SECRET_KEY, algorithms=['HS256'])
+
+    print("payload after decoding token=", payload)
+
+    print("payload['user']=", payload['user'])
+
+    if not request.user.is_authenticated:
+        return redirect('login')
+    try:
+
+        cookie = request.COOKIES["auth_cookie"]
+
+        print("cookie=",cookie)
+
+        payload = jwt.decode(cookie, SECRET_COOKIE_KEY, algorithms=['HS256'])
+
+        print("payload=", payload)
+
+        print("payload['user']=", payload['user'])
+
         if payload['user'] == 'admin':
             return render(request,"Lab/sec_mis/sec_mis_lab3.html", {"admin":True} )
         else:
