@@ -1,35 +1,37 @@
-name: CI/CD Pipeline for PyGoat
+name: CI/CD Pipeline
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   pull_request:
-    branches:
-      - master
+    branches: [ master ]
+  schedule:
+    - cron: '0 2 * * 1' # Schedule a weekly scan every Monday at 2 AM
 
 jobs:
-  # 1. Run security analysis using CodeQL
-  codeql:
-    name: CodeQL Security Analysis
+  analyze:
+    name: Analyze Code with CodeQL
     runs-on: ubuntu-latest
+
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'python' ] 
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    - name: Checkout Repository
+      uses: actions/checkout@v3
 
-      - name: Set up CodeQL
-        uses: github/codeql-action/setup-codeql@v2
-        with:
-          languages: python
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: ${{ matrix.language }}
 
-      - name: Initialize CodeQL
-        uses: github/codeql-action/autobuild@v2
-        with:
-          languages: python
-
-      - name: Run CodeQL analysis
-        uses: github/codeql-action/analyze@v2
-        with:
-          category: "Security Analysis"
-          
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
 
